@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Гостиницы Седоны</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <nav class="navigation">
+        <a class="navigation-logo-link" href="index.html">
+          <img class="navigation-logo-img" src="#" alt="Логотип City of Sedona">
+        </a>
+
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Лайки</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="button button-brown" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-inner">
+      <section class="filter">
+
+        <h1 class="filter-main-title">Гостиницы Седоны</h1>
+        <ul class="filter-breadcrumbs">
+          <li class="filter-breadcrumbs-item">
+            <a class="filter-breadcrumbs-link visually-hidden" href="index.html">Главная</a>
+          </li>
+          <li class="filter-breadcrumbs-item">
+            <a class="filter-breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
+
+        <fieldset class="filter-group">
+          <legend class="filter-title">Инфраструктура:</legend>
+          <ul class="filter-list">
+            <li class="filter-list-item">
+              <label class="control"><input class="control-input" type="checkbox" name="swimming-pool"
+                  checked>Бассейн</label>
+            </li>
+            <li class="filter-list-item">
+              <label class="control"><input class="control-input" type="checkbox" name="parking"
+                  checked>Парковка</label>
+            </li>
+            <li class="filter-list-item">
+              <label class="control"><input class="control-input" type="checkbox" name="wifi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="filter-group">
+          <legend class="filter-title">Тип Жилья:</legend>
+          <ul class="filter-list">
+            <li class="filter-list-item">
+              <label class="control"><input class="control-input" type="radio" name="hotel" value="Гостиница"
+                  checked>Гостиница</label>
+            </li>
+            <li class="filter-list-item">
+              <label class="control"><input class="control-input" type="radio" name="motel"
+                  value="Мотель">Мотель</label>
+            </li>
+            <li class="filter-list-item">
+              <label class="control"><input class="control-input" type="radio" name="apartment"
+                  value="Апартаменты">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="filter-group">
+          <legend class="filter-title">Стоимость, ₽:</legend>
+
+          <ul class="filter-group-value-list">
+            <li class="filter-group-value-list-item">
+              <form class="filter" action="https://echo.htmlacademy.ru/courses" method="post">
+                <label class="control">
+                  <input class="control-input" type="text" name="price-min" id="price-min-field" value="0">
+                  от</label>
+              </form>
+            </li>
+            <li class="filter-group-value-list-item">
+              <form class="filter" action="https://echo.htmlacademy.ru/courses" method="post">
+                <label class="control">
+                  <input class="control-input" type="text" name="price-max" id="price-max-field" value="9000">
+                  до</label>
+              </form>
+            </li>
+            <li class="filter-group-value-list-item">
+              <input class="control-range" type="range" min="0" max="9000" step="1">
+            </li>
+          </ul>
+
+          <ul class="filter-group-buttons-list">
+            <li class="filter-group-buttons-list-item">
+              <button class="button button-blue" type="submit">Применить</button>
+            </li>
+            <li class="filter-group-buttons-list-item">
+              <button class="button" type="submit">Сбросить</button>
+            </li>
+          </ul>
+        </fieldset>
+
+      </section>
+
+      <section class="search-result">
+
+        <h2>Найдено гостиниц: 38</h2>
+        <!-- Вопрос: Как разметить счетчик гостиниц? Будто бы тег h2 не подходит -->
+
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Сначала дешевые</option>
+          <option value="cheap">Сначала популярные</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+
+        <a class="button button-black" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать один объект</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+
+        <div class="hotel-card">
+          <a class="hotel-card-link" href="#">
+            <img class="hotel-card-image" src="#" alt="Amara Resort & Spa">
+            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+          </a>
+
+          <p class="hotel-card-price">
+            <span class="hotel-price-name">Гостиница</span>
+            <span class="hotel-price-value">От 4000 ₽</span>
+          </p>
+
+          <a class="button button-brown" href="#">Подробнее</a>
+          <button class="button button-blue">В избранное</button>
+          <span class="visually-hidden">Четыре звезды</span>
+          <a class="button button-gray" href="#">Рейтинг:8,5</a>
+          <!-- Вопрос: Как разметить рейтинг? Будто бы тег a не подходит -->
+        </div>
+
+        <div class="hotel-card">
+          <a class="hotel-card-link" href="#">
+            <img class="hotel-card-image" src="#" alt="Villas at Poco Diablo">
+            <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+          </a>
+
+          <p class="hotel-card-price">
+            <span class="hotel-price-name">Гостиница</span>
+            <span class="hotel-price-value">От 5000 ₽</span>
+          </p>
+
+          <a class="button button-brown" href="#">Подробнее</a>
+          <button class="button button-blue button-active">В избранном</button>
+          <!-- Вопрос: Как сделать чтобы менялась надпись при изменении значения? -->
+          <span class="visually-hidden">Четыре звезды</span>
+          <a class="button button-gray" href="#">Рейтинг: 9,2</a>
+          <!-- Вопрос: Как разметить рейтинг? Ведь он динамичен. Будто бы тег a не подходит -->
+        </div>
+
+        <div class="hotel-card">
+          <a class="hotel-card-link" href="#">
+            <img class="hotel-card-image" src="#" alt="Desert Quail Inn">
+            <h3 class="hotel-card-title">Desert Quail Inn</h3>
+          </a>
+
+          <p class="hotel-card-price">
+            <span class="hotel-price-name">Гостиница</span>
+            <span class="hotel-price-value">От 2500 ₽</span>
+          </p>
+
+          <a class="button button-brown" href="#">Подробнее</a>
+          <button class="button button-blue">В избранное</button>
+          <span class="visually-hidden">Три звезды</span>
+          <a class="button button-gray" href="#">Рейтинг: 6,9</a>
+          <!-- Вопрос: Как разметить рейтинг? Будто бы тег a не подходит -->
+        </div>
+
+        <div class="hotel-card">
+          <a class="hotel-card-link" href="#">
+            <img class="hotel-card-image" src="#" alt="GreenTree Inn">
+            <h3 class="hotel-card-title">GreenTree Inn</h3>
+          </a>
+
+          <p class="hotel-card-price">
+            <span class="hotel-price-name">Гостиница</span>
+            <span class="hotel-price-value">От 1500 ₽</span>
+          </p>
+
+          <a class="button button-brown" href="#">Подробнее</a>
+          <button class="button button-blue">В избранное</button>
+          <span class="visually-hidden">Две звезды</span>
+          <a class="button button-gray" href="#">Рейтинг: 5,0</a>
+          <!-- Вопрос: Как разметить рейтинг? Будто бы тег a не подходит -->
+        </div>
+
+
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+        </ul>
+      </section>
+
+      <section class="subscription">
+        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post"></form>>
+        <label for="newsletter-email">Ваш e-mail</label>
+        <input class="newsletter-field" type="email" name="email" placeholder="Ваш e-mail" id="newsletter-email"
+          required>
+        </form>
+        <button class="button" type="submit">Подписаться</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul class="social-list">
+        <li>
+          <a class="button-social" href="https://vk.com/htmlacademy">
+            <img<span class="visually-hidden">Vkontakte</span>
+          </a>
+        </li>
+        <li>
+          <a class="button-social" href="https://t.me/htmlacademy ">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+        <li>
+          <a class="button-social" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="logo" href="https://htmlacademy.ru/" aria-label="HTML Academy">
+        <img class="logo-img" src="#" alt="Логотип html-academy">
+      </a>
+    </footer>
+  </body>
+
+</html>
