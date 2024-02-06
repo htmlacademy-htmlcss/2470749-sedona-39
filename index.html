@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
 
         <a class="navigation-logo-link" href="index.html">
@@ -44,15 +44,15 @@
       </nav>
     </header>
 
-    <main class="main-index">
-      <section class="hero">
+    <main class="main-index" data-test="main">
+      <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <img class="hero-img" src="#" alt="Надпись Welcome to the gorgeous Sedona because the grand canyon sucks">
         <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
 
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества отдыха в Седоне</h2>
         <ul class="advantages-list">
           <li class="advantages-list-item">
@@ -104,17 +104,17 @@
         </ul>
       </section>
 
-      <section class="hotels-search">
+      <section class="hotels-search" data-test="search">
         <h2 class="hotels-search-title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
         <a class="button button-brown" href="#">Поиск гостиницы в Седоне</a>
       </section>
 
-      <section class="subscription">
+      <section class="subscription" data-test="subscribe">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post"></form>>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="newsletter-email">Ваш e-mail</label>
         <input class="newsletter-field" type="email" name="email" placeholder="Ваш e-mail" id="newsletter-email"
           required>
@@ -123,7 +123,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <ul class="social-list">
         <li>
           <a class="button-social" href="https://vk.com/htmlacademy">

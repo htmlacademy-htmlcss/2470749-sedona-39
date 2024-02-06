@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="navigation-logo-link" href="index.html">
           <img class="navigation-logo-img" src="#" alt="Логотип City of Sedona">
@@ -43,8 +43,8 @@
       </nav>
     </header>
 
-    <main class="main-inner">
-      <section class="filter">
+    <main class="main-inner" data-test="main">
+      <section class="filter" data-test="filter">
 
         <h1 class="filter-main-title">Гостиницы Седоны</h1>
         <ul class="filter-breadcrumbs">
@@ -126,7 +126,7 @@
 
       </section>
 
-      <section class="search-result">
+      <section class="search-result" data-test="catalog">
 
         <h2>Найдено гостиниц: 38</h2>
         <!-- Вопрос: Как разметить счетчик гостиниц? Будто бы тег h2 не подходит -->
@@ -242,10 +242,10 @@
         </ul>
       </section>
 
-      <section class="subscription">
+      <section class="subscription" data-test="subscribe">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post"></form>>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="newsletter-email">Ваш e-mail</label>
         <input class="newsletter-field" type="email" name="email" placeholder="Ваш e-mail" id="newsletter-email"
           required>
@@ -254,11 +254,11 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <ul class="social-list">
         <li>
           <a class="button-social" href="https://vk.com/htmlacademy">
-            <img<span class="visually-hidden">Vkontakte</span>
+            <span class="visually-hidden">Vkontakte</span>
           </a>
         </li>
         <li>
