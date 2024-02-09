@@ -8,20 +8,22 @@
 
   <body>
     <header class="page-header" data-test="header">
+      <a class="navigation-logo-link" href="index.html">
+        <img class="navigation-logo-img" src="images/sedona-logo.svg" width="140" height="70"
+          alt="Логотип Города Седона">
+      </a>
+
       <nav class="navigation">
-        <a class="navigation-logo-link" href="index.html">
-          <img class="navigation-logo-img" src="#" alt="Логотип City of Sedona">
-        </a>
 
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
@@ -36,11 +38,9 @@
               <span class="visually-hidden">Лайки</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="button button-brown" href="#">Хочу сюда!</a>
-          </li>
         </ul>
       </nav>
+      <button class="button" type="submit">Хочу сюда!</button>
     </header>
 
     <main class="main-inner" data-test="main">
@@ -53,8 +53,7 @@
             <a class="filter-breadcrumbs-link visually-hidden" href="index.html">Главная</a>
           </li>
           <li class="filter-breadcrumbs-item">
-            <a class="filter-breadcrumbs-link">Гостиницы</a>
-            <!-- Можно реализовать span так как последний элемент хлебных крошек - это текущая страница, на которую не нужна ссылка -->
+            <span>Гостиницы</span>
           </li>
         </ol>
 
@@ -133,73 +132,65 @@
             </a>
           </li>
         </ul>
-
+        <!-- Карточки гостиниц -->
         <article class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="#" alt="Amara Resort & Spa">
+            <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           </a>
-
           <p class="hotel-card-price">
             <span class="hotel-price-name">Гостиница</span>
             <span class="hotel-price-value">От 4000 ₽</span>
           </p>
-
           <a class="button button-brown" href="#">Подробнее</a>
           <button class="button button-blue">В избранное</button>
           <span class="visually-hidden">Четыре звезды</span>
-          <p class="button button-gray" href="#">Рейтинг:8,5</p>
+          <p class="button button-gray" href="#">Рейтинг: <span>8,5</span></p>
         </article>
 
         <article class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="#" alt="Villas at Poco Diablo">
+            <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
-
           <p class="hotel-card-price">
             <span class="hotel-price-name">Гостиница</span>
             <span class="hotel-price-value">От 5000 ₽</span>
           </p>
-
           <a class="button button-brown" href="#">Подробнее</a>
           <button class="button button-blue button-active">В избранном</button>
           <span class="visually-hidden">Четыре звезды</span>
-          <p class="button button-gray" href="#">Рейтинг: 9,2</p>
+          <p class="button button-gray" href="#">Рейтинг: <span>9,2</span></p>
         </article>
 
         <article class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="#" alt="Desert Quail Inn">
+            <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
-
           <p class="hotel-card-price">
             <span class="hotel-price-name">Гостиница</span>
             <span class="hotel-price-value">От 2500 ₽</span>
           </p>
-
           <a class="button button-brown" href="#">Подробнее</a>
           <button class="button button-blue">В избранное</button>
           <span class="visually-hidden">Три звезды</span>
-          <p class="button button-gray" href="#">Рейтинг: 6,9</p>
+          <p class="button button-gray" href="#">Рейтинг: <span>6,9</span></p>
         </article>
 
         <article class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="#" alt="GreenTree Inn">
+            <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
-
           <p class="hotel-card-price">
             <span class="hotel-price-name">Гостиница</span>
             <span class="hotel-price-value">От 1500 ₽</span>
           </p>
-
           <a class="button button-brown" href="#">Подробнее</a>
           <button class="button button-blue">В избранное</button>
           <span class="visually-hidden">Две звезды</span>
-          <p class="button button-gray" href="#">Рейтинг: 5,0</p>
+          <p class="button button-gray" href="#">Рейтинг: <span>5,0</span></p>
         </article>
 
 
@@ -236,7 +227,7 @@
       </section>
     </main>
 
-    <footer class="footer" data-test="footer">
+    <footer class="main-footer" data-test="footer">
       <ul class="social-list">
         <li>
           <a class="button-social" href="https://vk.com/htmlacademy">
@@ -244,7 +235,7 @@
           </a>
         </li>
         <li>
-          <a class="button-social" href="https://t.me/htmlacademy">
+          <a class="button-social" href="https://t.me/htmlacademy ">
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
@@ -256,7 +247,7 @@
       </ul>
       <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="logo" href="https://htmlacademy.ru/" aria-label="HTML Academy">
-        <img class="logo-img" src="#" alt="Логотип html-academy">
+        <img class="logo-img" src="images/html-academy-logo.svg" width="114.9" height="32.9" alt="Логотип html-academy">
       </a>
     </footer>
   </body>
