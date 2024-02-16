@@ -18,45 +18,45 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
-  background-color: #ffffff;
+  color: rgba(51, 51, 51, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 /* Кнопки */
 .button {
   font-family: inherit;
-  text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  border-style: none;
+  text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  border-style: none;
 }
 
 .button-brown {
-  background-color: #756157;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(117, 97, 87, 1);
 }
 
 .button-blue {
-  background-color: #82B3D3;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(130, 179, 211, 1);
 }
 
 .button-gray {
-  background-color: #F2F2F2;
-  color: #333333;
+  color: rgba(51, 51, 51, 1);
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .button-clear {
+  color: rgba(255, 255, 255, 1);
   background-color: rgba(0, 0, 0, 0);
-  color: #ffffff;
 }
 
 .button-active {
-  background-color: #7DB54F;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(125, 181, 79, 1);
 }
 
 .button-big {
@@ -66,18 +66,18 @@ body {
 
 /* Header */
 .navigation-link {
-  color: #000000;
-  text-decoration: none;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
 }
 
 /* Основная страница main */
 /* Блок: hero */
 .background-image-container {
-  color: #000000;
-  background-color: #ffffff;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -87,8 +87,8 @@ body {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
-  color: #000000;
 }
 
 .hero-text {
@@ -101,14 +101,14 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
-  color: #000000;
 }
 
 /* Раскраска блоков */
 .blue {
-  background-color: #82B3D3;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(130, 179, 211, 1);
 }
 
 .gray {
@@ -124,16 +124,16 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
-  color: #000000;
 }
 
 .conveniences-main-text {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
-  color: #000000;
 }
 
 .conveniences-text {
@@ -146,8 +146,8 @@ body {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
-  color: #000000;
 }
 
 .hotels-search-text {
@@ -157,8 +157,8 @@ body {
 
 /* Блок: подписка */
 .subscription {
-  background-color: #000000;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 1);
   background-image: url("../images/subscribe-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -181,15 +181,15 @@ body {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
-  color: #000000;
 }
 
 /* Каталог main */
 /* Фильтр */
 .filter {
-  color: #ffffff;
-  background-color: #000000;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 1);
   background-image: url("../images/catalog/filter-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -217,9 +217,9 @@ body {
 
 .price-input {
   font-family: inherit;
-  color: #000000;
   font-weight: 700;
   line-height: 24px;
+  color: rgba(0, 0, 0, 1);
 }
 
 /* Каталог гостиниц */
@@ -227,12 +227,12 @@ body {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  color: rgba(51, 51, 51, 1);
   text-transform: uppercase;
-  color: #333333;
 }
 
 .select-control {
-  color: #333333;
+  color: rgba(51, 51, 51, 1);
 }
 
 .hotel-card-title {
@@ -242,35 +242,35 @@ body {
 }
 
 .hotel-card-link {
-  color: #000000;
+  color: rgba(0, 0, 0, 1);
   text-decoration: none;
 }
 
 /* Пагинация */
 .pagination-link {
-  color: #ffffff;
-  background-color: #82B3D3;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(130, 179, 211, 1);
   text-decoration: none;
 }
 
 .pagination-link-current {
-  color: #000000;
-  background-color: #F2F2F2;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .pagination-link-dots {
-  color: #000000;
-  background-color: #ffffff;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 /* Footer*/
 .phone {
   font-size: 40px;
   line-height: 40px;
+  color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
 }
