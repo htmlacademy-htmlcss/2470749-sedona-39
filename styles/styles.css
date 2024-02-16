@@ -24,6 +24,7 @@ body {
 
 /* Кнопки */
 .button {
+  font-family: inherit;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
@@ -184,11 +185,6 @@ body {
   color: #000000;
 }
 
-.subscription-catalog-text {
-  font-size: 22px;
-  line-height: 26px;
-}
-
 /* Каталог main */
 /* Фильтр */
 .filter {
@@ -220,6 +216,7 @@ body {
 }
 
 .price-input {
+  font-family: inherit;
   color: #000000;
   font-weight: 700;
   line-height: 24px;
@@ -268,8 +265,6 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
-
-
 
 /* Footer*/
 .phone {

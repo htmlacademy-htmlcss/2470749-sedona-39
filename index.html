@@ -45,19 +45,20 @@
     </header>
 
     <main class="main-index" data-test="main">
+      <!-- Блок: hero -->
       <section class="hero" data-test="hero">
         <div class="background-image-container">
-        <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <img class="hero-img" src="images/welcome-to-sedona.svg" width="458" height="352"
-          alt="Добро пожаловать в Седону!">
+          <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+          <img class="hero-img" src="images/welcome-to-sedona.svg" width="458" height="352"
+            alt="Добро пожаловать в Седону!">
         </div>
         <p class="hero-main-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="hero-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
 
+      <!-- Блок: преимущества -->
       <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества отдыха в Седоне</h2>
-
         <article class="advantages-item blue">
           <h3 class="advantages-title blue">Настоящий городок</h3>
           <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -87,7 +88,7 @@
             alt="Фотография гор">
         </article>
       </section>
-
+      <!-- Блок: удобства -->
       <section class="conveniences">
         <h2 class="visually-hidden">Удобства расположения в Седоне</h2>
         <p class="conveniences-main-text">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
@@ -107,28 +108,27 @@
           <h3 class="conveniences-title">Сувениры</h3>
           <p class="conveniences-description">Не только китайского, но и настоящего местного производства!!</p>
         </article>
-
       </section>
-
+      <!-- Блок: поиск гостиницы -->
       <section class="hotels-search" data-test="search">
         <h2 class="hotels-search-title">Заинтересовались?</h2>
         <p class="hotels-search-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
         <button class="button button-brown button-big" type="button">Поиск гостиницы в Седоне</button>
       </section>
-
+      <!-- Блок подписки -->
       <section class="subscription" data-test="subscribe">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="email-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="email-label">Ваш e-mail</label>
-          <input class="email-field" type="email" name="email" placeholder="Ваш e-mail" id="newsletter-email"
-            required>
+          <label>Ваш e-mail
+            <input class="email-field" type="email" name="email" placeholder="Ваш e-mail" required>
+          </label>
           <button class="button button-blue button-big" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
-
+    <!-- Футер -->
     <footer class="main-footer" data-test="footer">
       <ul class="social-list">
         <li>
