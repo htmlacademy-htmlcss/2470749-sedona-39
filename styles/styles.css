@@ -73,6 +73,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-right: 30px;
+  /* margin right на случай если будет переполнение и перенос на другую строку, чтобы списки не слиплись */
   padding: 0;
   list-style-type: none;
   width: 450px;
@@ -94,10 +96,10 @@ body {
   justify-content: flex-end;
   width: 126px;
   margin: 0;
-  padding: 0;
-  list-style-type: none;
   margin-left: auto;
   margin-right: 20px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .navigation-user-item {
@@ -178,12 +180,13 @@ body {
 
 .advantages-item-img {
   display: flex;
+  align-items: center;
   color: #ffffff;
   background-color: #82b3d3;
   flex-grow: 1;
 }
 
-.reverse {
+.advantages-item-img-reverse {
   flex-direction: row-reverse;
 }
 
@@ -208,6 +211,7 @@ body {
 
 .advantages-item-img-photo {
   min-width: 800px;
+  object-fit: contain;
   flex-grow: 1;
 }
 
@@ -405,18 +409,15 @@ body {
 .filter-breadcrumbs {
   display: flex;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 40px;
 
   font-size: 16px;
 }
 
 /* Форма */
 .filter-form {
-  display: flex;
-  align-items: flex-end;
-
   line-height: 23px;
 }
 
@@ -431,46 +432,30 @@ body {
 
 /* Блок: инфраструктура и тип жилья */
 .filter-group {
-  width: 150px;
   margin: 0;
+  /* margin-right: 70px; */
   padding: 0;
-
   border: none;
 }
 
 .filter-list {
+  /* width: 150px; */
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.filter-list-item {
-margin-bottom: 16px;
-}
-
-.filter-list-item:last-child {
-  margin-bottom: 0;
-}
-
-.infrastructure {
-  margin-right: 70px;
-}
-
-.accomodation {
-  margin-right: auto;
 }
 
 /* Блок: стоимость */
 .filter-group-price {
   margin: 0;
   padding: 0;
-  width: 288px;
+
   border: none;
-  margin-right: 70px;
+  /* margin-right: 70px; */
 }
 
 .price-input {
-  width: 110px;
+  /* width: 110px; */
   margin-bottom: 30px;
 
   font-family: inherit;
@@ -480,18 +465,19 @@ margin-bottom: 16px;
 }
 
 .price-range {
+  /* width: 287px; */
   margin: 0;
-  width: 288px;
 }
 
-/* Кнопки */
-.filter-buttons-container {
+/* Кнопки в фильтре */
+/* .filter-buttons-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-}
+} */
 
 .apply-button {
+
   margin-bottom: 32px;
   min-width: 191px;
 
@@ -596,13 +582,10 @@ margin-bottom: 16px;
 /* Пагинация */
 .pagination {
   display: flex;
+  gap: 8px;
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.pagination-item {
-  margin-right: 8px;
 }
 
 .pagination-item:last-child {
@@ -617,6 +600,7 @@ margin-bottom: 16px;
   height: 60px;
   padding: 12px 10px;
   text-align: center;
+  border-radius: 4px;
 
   font-size: 20px;
   font-weight: 700;
@@ -650,6 +634,7 @@ margin-bottom: 16px;
 .footer-logo {
   width: 115px;
   height: 33px;
+  object-fit: contain;
 }
 
 .footer-social-list {
