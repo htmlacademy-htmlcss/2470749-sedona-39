@@ -58,9 +58,8 @@
         </ol>
         <!-- Фильтр -->
         <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-          <!-- <fieldset class="filter-group"> -->
-            <!-- <legend class="filter-title">Инфраструктура:</legend> -->
-            <h2 class="filter-title infrastructure-title">Инфраструктура</h2>
+          <fieldset class="filter-group">
+            <legend class="filter-title">Инфраструктура:</legend>
             <ul class="filter-list infrastructure-list">
               <li class="filter-list-item">
                 <label class="filter-list-item-input"><input class="control-input" type="checkbox" name="swimming-pool"
@@ -75,11 +74,10 @@
                     name="wifi">Wi-Fi</label>
               </li>
             </ul>
-          <!-- </fieldset> -->
+          </fieldset>
 
-          <!-- <fieldset class="filter-group"> -->
-            <!-- <legend class="filter-title">Тип Жилья:</legend> -->
-            <h2 class="filter-title accomodation-title">Тип жилья</h2>
+          <fieldset class="filter-group">
+            <legend class="filter-title">Тип Жилья:</legend>
             <ul class="filter-list accomodation-list">
               <li class="filter-list-item">
                 <label class="filter-list-item-input"><input class="control-input" type="radio" name="accomodation"
@@ -94,22 +92,24 @@
                     value="Апартаменты">Апартаменты</label>
               </li>
             </ul>
-          <!-- </fieldset> -->
-          <!-- <fieldset class="filter-group-price"> -->
-            <!-- <legend class="filter-title">Стоимость, ₽:</legend> -->
-            <h2 class="filter-title price-title">Стоимость</h2>
-            <label class="price-label min-price">
-              <input class="price-input min-price" type="text" name="price-min" id="price-min-field" value="0">
-              от</label>
-            <label class="price-label max-price">
-              <input class="price-input max-price" type="text" name="price-max" id="price-max-field" value="9000">
-              до</label>
+          </fieldset>
+
+          <fieldset class="filter-group-price">
+            <legend class="filter-title">Стоимость, ₽:</legend>
+            <div class="price-container">
+              <label class="price-label-min" for="price-min">от</label>
+              <input class="price-input min-price" type="text" name="price-min" id="price-min" value="0">
+
+              <label class="price-label-max" for="price-max">до</label>
+              <input class="price-input max-price" type="text" name="price-max" id="price-max" value="9000">
+            </div>
             <input class="price-range" type="range" min="0" max="9000" step="1">
-          <!-- </fieldset> -->
-             <!-- <div class="buttons-container"> -->
+          </fieldset>
+
+          <div class="buttons-container">
             <button class="apply-button" type="submit">Применить</button>
             <button class="reset-button" type="reset">Сбросить</button>
-          <!-- </div> -->
+          </div>
         </form>
       </section>
       <!-- Сортировка гостиниц -->

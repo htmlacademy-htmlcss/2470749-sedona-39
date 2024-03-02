@@ -58,6 +58,8 @@ body {
 }
 
 .navigation-logo-link {
+  position: relative;
+  margin-bottom: -10px;
   margin-right: 28px;
 }
 
@@ -362,7 +364,7 @@ body {
 
 .subscription-img {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #82b3d3;
   background-image: url("../images/index/subscribe-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -419,36 +421,30 @@ body {
 
 /* Форма */
 .filter-form {
-  display: grid;
-  grid-template-columns: max-content 70px max-content auto 144px 144px 70px 191px;
-  grid-template-rows: auto 48px 36px;
-  grid-template-areas:
-    "title1 . title2 . title3 title3 . ."
-    "infrastructure . accomodation . min-price max-price . apply"
-    "infrastructure . accomodation . range range . reset";
-  row-gap: 32px;
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
   line-height: 23px;
 }
 
 /* Блок: инфраструктура и тип жилья */
+.filter-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 .filter-title {
   margin: 0;
+  margin-bottom: 32px;
 
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
 }
 
-.infrastructure-title {
-  grid-area: title1;
-}
-
-.accomodation-title {
-  grid-area: title2;
-}
-
 .filter-list {
+  width: 150px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -462,51 +458,83 @@ body {
   margin-bottom: 0;
 }
 
-.accomodation-list {
-  grid-area: accomodation;
-}
-
-.infrastructure-list {
-  grid-area: infrastructure;
-}
-
 /* Блок: стоимость */
-.price-title {
-  grid-area: title3;
+.filter-group-price {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  width: 288px;
+
+  border: none;
+}
+
+.price-container {
+  display: flex;
+  gap: 2px;
+}
+
+.price-label-min {
+  position: absolute;
+  top: 12px;
+  left: 106px;
+
+  line-height: 24px;
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.price-label-max {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+
+  line-height: 24px;
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .price-input {
+  box-sizing: border-box;
   width: 143px;
   padding: 0;
-  border: none;
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  margin-bottom: 36px;
+
   font-family: inherit;
   font-weight: 700;
   line-height: 24px;
   color: #000000;
+  border: none;
 }
 
 .min-price {
-  grid-area: min-price;
-  margin-right: 1px;
+  border-radius: 4px 0 0 4px;
 }
 
 .max-price {
-  grid-area: max-price;
-  margin-left: 1px;
+  border-radius: 0 4px 4px 0;
 }
 
 .price-range {
-  grid-area: range;
-  align-items: end;
-  width: 100%;
+  flex-grow: 1;
+  align-self: center;
+  width: 287px;
   margin: 0;
 }
 
 /* Кнопки в фильтре */
+.buttons-container {
+  min-width: 191px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
 .apply-button {
-  grid-area: apply;
-  padding: 8px 15px;
-  height: 36px;
+  padding: 8px 20px;
+  margin-bottom: 32px;
 
   font-family: inherit;
   font-size: 16px;
@@ -515,12 +543,13 @@ body {
   color: #ffffff;
   background-color: #82b3d3;
   border-style: none;
+  border-radius: 4px;
   text-transform: uppercase;
   text-align: center;
 }
 
 .reset-button {
-  grid-area: reset;
+  padding: 8px 20px;
 
   font-family: inherit;
   font-size: 16px;
@@ -529,6 +558,7 @@ body {
   color: #ffffff;
   background-color: transparent;
   border-style: none;
+  border-radius: 4px;
   text-transform: uppercase;
   text-align: center;
 }
