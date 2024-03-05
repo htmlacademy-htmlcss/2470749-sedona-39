@@ -55,10 +55,10 @@ body {
   display: flex;
   padding: 0 70px;
   min-height: 64px;
+  position: relative;
 }
 
 .navigation-logo-link {
-  position: relative;
   margin-bottom: -10px;
   margin-right: 28px;
 }
@@ -96,6 +96,7 @@ body {
 
 .navigation-user {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   width: 126px;
   margin: 0;
@@ -471,7 +472,9 @@ body {
 
 .price-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 2px;
+  margin-bottom: 36px;
 }
 
 .price-label-min {
@@ -499,7 +502,7 @@ body {
   padding-top: 12px;
   padding-left: 20px;
   padding-bottom: 12px;
-  margin-bottom: 36px;
+  padding-right: 45px;
 
   font-family: inherit;
   font-weight: 700;
@@ -636,6 +639,7 @@ body {
   width: 340px;
   display: grid;
   grid-template-columns: 140px 140px;
+  grid-template-rows: 1fr;
   grid-template-areas:
     "image image"
     "title title"
@@ -644,7 +648,9 @@ body {
     "stars rate";
   column-gap: 20px;
   row-gap: 16px;
-  padding: 20px 20px;
+  justify-content: center;
+  padding: 20px 0;
+  border: 1px solid #e6e6e6;
 }
 
 .hotel-card-title-link {
@@ -744,6 +750,7 @@ body {
 /* Пагинация */
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 0;
   padding: 0;
