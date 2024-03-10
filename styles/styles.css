@@ -187,9 +187,10 @@ body {
 .hero {
   color: #ffffff;
   background-color: #82b3d3;
-  background-image: url("../images/index/index-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("../images/index/divider.svg"), url("../images/index/index-background.jpg");
+  background-size: 100%, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, center;
 }
 
 .hero-img {
