@@ -333,31 +333,11 @@ body {
 .services-item {
   box-sizing: border-box;
   width: 400px;
-  padding: 183px 80px 85px 80px;
-
-  background-repeat: no-repeat;
-  background-position: center top 81px;
-  background-size: 75px 72px;
+  padding: 81px 85px;
 }
 
 .services-item:nth-child(even) {
   background-color: rgba(131, 179, 211, 0.2);
-}
-
-.services-living-icon {
-  background-image: url("/images/icons/living-icon.svg");
-}
-
-.services-food-icon {
-  background-image: url("/images/icons/food-icon.svg");
-}
-
-.services-gift-icon {
-  background-image: url("/images/icons/souvenirs-icon.svg");
-}
-
-.services-icon {
-  margin-bottom: 30px;
 }
 
 .services-title {
@@ -369,6 +349,30 @@ body {
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.services-title::before {
+  content: "";
+  display: block;
+  width: 74px;
+  height: 70px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services-living::before {
+  background-image: url("/images/icons/living-icon.svg");
+}
+
+.services-food::before {
+  background-image: url("/images/icons/food-icon.svg");
+}
+
+.services-gift::before {
+  background-image: url("/images/icons/souvenirs-icon.svg");
 }
 
 .services-description {
@@ -1035,7 +1039,7 @@ body {
 
   color: #333333;
   background-color: #f2f2f2;
-  cursor:auto;
+  cursor: auto;
 }
 
 /* Пагинация */
