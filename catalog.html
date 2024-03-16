@@ -78,16 +78,22 @@
             <legend class="filter-title">Инфраструктура:</legend>
             <ul class="filter-list infrastructure-list">
               <li class="filter-list-item">
-                <label class="filter-list-item-label"><input class="filter-list-item-input" type="checkbox"
-                    name="swimming-pool" checked>Бассейн</label>
+                <label class="filter-list-item-label"><input class="filter-list-item-input visually-hidden"
+                    type="checkbox" name="swimming-pool" checked>Бассейн
+                  <span class="control-mark"></span>
+                </label>
               </li>
               <li class="filter-list-item">
-                <label class="filter-list-item-label"><input class="filter-list-item-input" type="checkbox"
-                    name="parking" checked>Парковка</label>
+                <label class="filter-list-item-label"><input class="filter-list-item-input visually-hidden"
+                    type="checkbox" name="parking" checked>Парковка
+                  <span class="control-mark"></span>
+                </label>
               </li>
               <li class="filter-list-item">
-                <label class="filter-list-item-label"><input class="filter-list-item-input" type="checkbox"
-                    name="wifi">Wi-Fi</label>
+                <label class="filter-list-item-label"><input class="filter-list-item-input visually-hidden"
+                    type="checkbox" name="wifi">Wi-Fi
+                  <span class="control-mark"></span>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -96,16 +102,22 @@
             <legend class="filter-title">Тип Жилья:</legend>
             <ul class="filter-list accomodation-list">
               <li class="filter-list-item">
-                <label class="filter-list-item-label"><input class="filter-list-item-input" type="radio"
-                    name="accomodation" value="Гостиница" checked>Гостиница</label>
+                <label class="filter-list-item-label"><input class="filter-list-item-input visually-hidden" type="radio"
+                    name="accomodation" value="Гостиница" checked>Гостиница
+                  <span class="control-mark control-radio"></span>
+                </label>
               </li>
               <li class="filter-list-item">
-                <label class="filter-list-item-label"><input class="filter-list-item-input" type="radio"
-                    name="accomodation" value="Мотель">Мотель</label>
+                <label class="filter-list-item-label"><input class="filter-list-item-input visually-hidden" type="radio"
+                    name="accomodation" value="Мотель">Мотель
+                  <span class="control-mark control-radio"></span>
+                </label>
               </li>
               <li class="filter-list-item">
-                <label class="filter-list-item-label"><input class="filter-list-item-input" type="radio"
-                    name="accomodation" value="Апартаменты">Апартаменты</label>
+                <label class="filter-list-item-label"><input class="filter-list-item-input visually-hidden" type="radio"
+                    name="accomodation" value="Апартаменты">Апартаменты
+                  <span class="control-mark control-radio"></span>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -114,12 +126,21 @@
             <legend class="filter-title">Стоимость, ₽:</legend>
             <div class="price-container">
               <label class="price-label-min" for="price-min">от</label>
-              <input class="price-input min-price" type="text" name="price-min" id="price-min" value="0">
+              <input class="price-input min-price" type="number" name="price-min" id="price-min" value="0">
 
               <label class="price-label-max" for="price-max">до</label>
-              <input class="price-input max-price" type="text" name="price-max" id="price-max" value="9000">
+              <input class="price-input max-price" type="number" name="price-max" id="price-max" value="9000">
             </div>
-            <input class="price-range" type="range" min="0" max="9000" step="1">
+            <div class="range">
+              <div class="range-scale">
+                <div class="range-bar">
+                  <button class="range-toggle toggle-min" type="button"></button>
+                  <span class="visually-hidden">Задать минимальную цену</span>
+                  <button class="range-toggle toggle-max" type="button"></button>
+                  <span class="visually-hidden">Задать максимальную цену</span>
+                </div>
+              </div>
+            </div>
           </fieldset>
 
           <div class="buttons-container">
@@ -219,7 +240,7 @@
             <a class="button detail-button" href="#">Подробнее</a>
             <button class="button favorite-button" type="button">В избранное</button>
             <span class="visually-hidden">Четыре звезды</span>
-       <span class="hotel-card-star hotel-card-star-four"></span>
+            <span class="hotel-card-star hotel-card-star-four"></span>
             <p class="button rate-button" href="#">Рейтинг: 8,5</p>
           </article>
 
