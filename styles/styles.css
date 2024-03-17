@@ -1322,6 +1322,7 @@ body {
   position: relative;
   margin: auto;
   padding: 64px 70px;
+  width: 717px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
@@ -1357,19 +1358,24 @@ body {
 }
 
 .modal-close-button:active .modal-close-icon {
-  fill:rgba(117, 97, 87, 0.3);
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* Форма поиска гостиницы */
+
 .modal-form-fieldset {
+  border: none;
+}
+
+.fieldset-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 120px max-content 1fr max-content;
+  grid-template-rows: 1fr;
+  column-gap: 18px;
 
   padding: 0;
   margin: 0;
   margin-bottom: 48px;
-  list-style-type: none;
-  border: none;
 }
 
 .modal-form-title {
@@ -1382,7 +1388,6 @@ body {
 }
 
 .modal-form-input {
-  /* position: relative; */
   padding: 12px 20px;
   border-radius: 4px;
   font-family: inherit;
@@ -1409,12 +1414,14 @@ body {
 .check-in-date-input,
 .check-out-date-input {
   grid-column: 2 / 5;
+  align-self: center;
 }
 
 .modal-form-text {
   grid-column: 2 / 5;
   margin-bottom: 23px;
   margin-left: 20px;
+
   font-family: inherit;
   font-size: 16px;
   line-height: 21px;
@@ -1439,11 +1446,7 @@ body {
 
 .input-container {
   position: relative;
-}
-
-.kids-count-label {
-  justify-self: end;
-  margin-right: 34px;
+  align-self: center;
 }
 
 .kids-input {
@@ -1515,4 +1518,57 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+/* Тултип */
+.tooltip {
+  position: absolute;
+  margin-left: 10px;
+  width: 26px;
+  height: 26px;
+}
+
+.tooltip-button {
+  display: block;
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: 50%;
+  background-color: #83b3d3;
+  padding: 7px 12px;
+  margin: 0;
+}
+
+.tooltip-text {
+  position: absolute;
+  width: 256px;
+  padding: 15px 18px 18px 22px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  border-radius: 10px;
+  color:#ffffff;
+  background-color: #333333;
+  box-shadow: 0 15px 30px 0;
+  transform: translateX(-106px) translateY(15px);
+  z-index: 1;
+  display: none;
+}
+
+.tooltip-text-arrow {
+  position: absolute;
+  top: -9px;
+  right: 50%;
+}
+
+.modal-form-label-icon {
+  position: relative;
+  padding-right: 26px;
+  margin-left: 70px;
+ }
+
+.tooltip-button:hover + .tooltip-text,
+.tooltip-button:focus + .tooltip-text {
+  display: block;
 }
