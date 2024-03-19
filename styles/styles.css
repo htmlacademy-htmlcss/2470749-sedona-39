@@ -72,6 +72,15 @@ body {
   width: 140px;
 }
 
+.header-logo-link:hover .header-logo-link-img,
+.header-logo-link:focus .header-logo-link-img {
+  opacity: 0.6;
+}
+
+.header-logo-link:active .header-logo-link-img {
+  opacity: 0.3;
+}
+
 .navigation {
   display: flex;
   width: 730px;
@@ -110,6 +119,15 @@ body {
   height: 2px;
   margin-top: 20px;
   background-color: #756257;
+}
+
+.navigation-list-item-link:hover,
+.navigation-list-item-link:focus {
+  color: #756157;
+}
+
+.navigation-list-item-link:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-user {
@@ -154,6 +172,15 @@ body {
 
   border-radius: 50%;
   background-color: #7db54f;
+}
+
+.navigation-user-item-link:hover .navigation-user-item-link-icon,
+.navigation-user-item-link:focus .navigation-user-item-link-icon {
+  fill: #756157;
+}
+
+.navigation-user-item-link:active .navigation-user-item-link-icon {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .header-button {
@@ -1102,7 +1129,7 @@ body {
 }
 
 /* Кнопки */
-.button {
+.card-button {
   padding: 8px 15px;
   margin: 0;
 
@@ -1116,10 +1143,6 @@ body {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-}
-
-.button:disabled {
-  background-color: #e5e5e5;
 }
 
 .detail-button {
@@ -1168,6 +1191,10 @@ body {
 
 .favorite-button-active:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.card-button:disabled {
+  background-color: #e5e5e5;
 }
 
 .rate-button {
@@ -1331,7 +1358,8 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
+  /* Для того, чтобы высветилось модальное окно, нужно удалить код выше */
 }
 
 .modal {
@@ -1341,6 +1369,7 @@ body {
   width: 717px;
   background-color: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
 }
 
 /* Кнопка закрытия модального окна */
@@ -1379,6 +1408,8 @@ body {
 
 /* Форма поиска гостиницы */
 .modal-form-fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -1443,7 +1474,7 @@ body {
 }
 
 .error-text {
-  color: #ff0000;
+  color: #ff5757;
 }
 
 .check-in-date-input,
@@ -1528,7 +1559,7 @@ body {
   font-family: inherit;
   color: #ffffff;
   background-color: #83b3d3;
-  border-radius: 4px;
+  border-radius: 10px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1557,7 +1588,7 @@ body {
 .tooltip-text {
   position: absolute;
   width: 256px;
-  padding: 15px 18px 18px 22px;
+  padding: 18px 18px 20px 22px;
 
   font-size: 16px;
   line-height: 20px;
@@ -1566,15 +1597,16 @@ body {
   color: #ffffff;
   background-color: #333333;
   box-shadow: 0 15px 30px 0;
-  transform: translateX(-106px) translateY(15px);
+  transform: translateX(-115px) translateY(15px);
   z-index: 1;
   display: none;
 }
 
 .tooltip-text-arrow {
   position: absolute;
-  top: -9px;
+  top: -8px;
   right: 50%;
+  transform: translateX(8px);
 }
 
 .modal-form-label-icon {
