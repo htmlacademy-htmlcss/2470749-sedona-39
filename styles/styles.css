@@ -710,7 +710,7 @@ body {
 }
 
 .filter-list-item-input[type="checkbox"]:checked + .control-mark {
-  background-image: url("/images/catalog/checkmark.svg");
+  background-image: url("/images/icons/checkmark.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -997,7 +997,7 @@ body {
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
-  background-image: url("/images/catalog/sorting-mark.svg");
+  background-image: url("/images/icons/sorting-mark.svg");
   background-repeat: no-repeat;
   background-position: top 50% right 20px;
   border-radius: 4px;
