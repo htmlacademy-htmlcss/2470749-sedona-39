@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/favicon.ico/favicon.ico">
   </head>
 
   <body>
@@ -161,7 +161,7 @@
           <a class="button-social" href="https://t.me/htmlacademy ">
             <span class="visually-hidden">Telegram</span>
             <svg class="icon-social" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17"
-              fill="#83B3D3" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка Телеграм">
+              fill="#83B3D3" role="img" aria-label="Иконка Телеграм" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M16.785 0.955705L0.840489 7.1042C-0.247661 7.54126 -0.241365 8.14828 0.640845 8.41897L4.73445 9.69597L14.2058 3.72014C14.6537 3.44766 15.0629 3.59424 14.7265 3.89281L7.05283 10.8183H7.05103L7.05283 10.8192L6.77045 15.0387C7.18413 15.0387 7.36669 14.8489 7.59871 14.625L9.58705 12.6915L13.7229 15.7464C14.4855 16.1664 15.0332 15.9506 15.2229 15.0405L17.9379 2.2453C18.2158 1.13107 17.5126 0.626562 16.785 0.955705Z" />
             </svg>
@@ -181,7 +181,7 @@
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="footer-logo-link" href="https://htmlacademy.ru/" aria-label="HTML Academy">
         <svg class="footer-logo-svg" aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34"
-        role="img" aria-label="Логотип HTML Академии" xmlns="http://www.w3.org/2000/svg">
+          role="img" aria-label="Логотип HTML Академии" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" />
           <path
             d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z" />
@@ -214,29 +214,27 @@
       <div class="modal modal-auth">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
-          <svg class="modal-close-icon" width="14" height="14" viewBox="0 0 14 14" fill="black" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+          <svg class="modal-close-icon" width="14" height="14" viewBox="0 0 14 14" fill="black" aria-hidden="true"
+            focusable="false" role="img" aria-label="Кнопка закрытия модального окна"
+            xmlns="http://www.w3.org/2000/svg">
             <path
               d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" />
           </svg>
         </button>
         <section class="modal-content">
           <h2 class="visually-hidden">Модальное окно для поиска гостиницы в Седоне</h2>
-          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="modal-form-fieldset">
 
               <legend class="modal-form-title">Поиск гостиницы в Седоне</legend>
               <div class="fieldset-container">
                 <label class=" modal-form-label date-label" for="check-in-date">Дата Заезда:</label>
-
-                <input class="modal-form-input check-in-date-input" type="date" id="check-in-date" name="check-in-date"
-                  required>
+                <input class="modal-form-input date-input" type="text" id="check-in-date" name="check-in-date" value="27 апреля 2020" placeholder="Укажите дату" required>
                 <span class="modal-form-text error-text">Мы не можем отправить вас в прошлое.</span>
 
-
                 <label class="modal-form-label date-label" for="check-out-date">Дата Выезда:</label>
-
-                <input class="modal-form-input check-out-date-input" type="date" id="check-out-date"
-                  name="check-out-date" required>
+                <input class="modal-form-input date-input" type="text" id="check-out-date" name="check-out-date" value="1 сентября 2024" placeholder="Укажите дату"
+                  required>
                 <span class="modal-form-text">На эти даты есть свободные номера. Пока есть.</span>
 
                 <label class="modal-form-label adults-count-label" for="adults-count">Взрослые:</label>
@@ -245,20 +243,20 @@
                     <span class="visually-hidden">Уменьшить количество</span>
                     <span class="count-input-button-icon">
                       <svg class="button-svg" width="14" height="2" viewBox="0 0 14 2" fill="#756157" fill-opacity="0.3"
-                      aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                        aria-hidden="true" focusable="false" role="img"
+                        aria-label="Кнопка для уменьшения количества взрослых" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0L0 2L14 2V0L0 0Z" />
                       </svg>
                     </span>
                   </button>
-
                   <input class="modal-form-input count-input" type="number" id="adults-count" name="adults-count"
                     min="0" required>
-
                   <button class="count-input-button plus" type="button">
                     <span class="visually-hidden">Увеличить количество</span>
                     <span class="count-input-button-icon">
                       <svg class="button-svg" width="14" height="14" viewBox="0 0 14 14" fill="#756157"
-                        fill-opacity="0.3" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                        fill-opacity="0.3" aria-hidden="true" focusable="false" role="img"
+                        aria-label="Кнопка для увеличения количества взрослых" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                       </svg>
                     </span>
@@ -268,24 +266,8 @@
                 <span class="modal-form-label modal-form-label-icon">
                   <label class="modal-form-label" for="kids-count">Дети:</label>
                   <span class="tooltip">
-                    <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-count">
-                      <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="white"
-                      aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" />
-                      </svg>
-                    </button>
+                    <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-count"></button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label-count">
-                      <svg class="tooltip-text-arrow" width="19" height="9" viewBox="0 0 19 9" fill="none"
-                      aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_102232_83)">
-                          <path d="M9.5 0L19 9H0L9.5 0Z" fill="#333333" />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_102232_83">
-                            <rect width="19" height="9" fill="white" />
-                          </clipPath>
-                        </defs>
-                      </svg>
                       Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
                       лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
@@ -295,19 +277,20 @@
                     <span class="visually-hidden">Уменьшить количество</span>
                     <span class="count-input-button-icon">
                       <svg class="button-svg" width="14" height="2" viewBox="0 0 14 2" fill="#756157" fill-opacity="0.3"
-                      aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                        aria-hidden="true" focusable="false" role="img"
+                        aria-label="Кнопка для уменьшения количества детей" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0L0 2L14 2V0L0 0Z" />
                       </svg>
                     </span>
                   </button>
-
                   <input class="modal-form-input count-input" type="number" id="kids-count" name="kids-count" min="0"
                     required>
                   <button class="count-input-button plus" type="button">
                     <span class="visually-hidden">Увеличить количество</span>
                     <span class="count-input-button-icon">
                       <svg class="button-svg" width="14" height="14" viewBox="0 0 14 14" fill="#756157"
-                        fill-opacity="0.3" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                        fill-opacity="0.3" aria-hidden="true" focusable="false" role="img"
+                        aria-label="Кнопка для увеличения количества детей" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                       </svg>
                     </span>
