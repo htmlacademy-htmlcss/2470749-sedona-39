@@ -31,7 +31,6 @@ body {
   flex-direction: column;
   min-height: 100%;
   width: 1200px;
-
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -107,7 +106,6 @@ body {
 .navigation-list-item-link {
   display: block;
   padding: 20px 16px;
-
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -182,7 +180,6 @@ body {
   right: 4px;
   bottom: 33px;
   z-index: 1;
-
   border-radius: 50%;
   background-color: #7db54f;
 }
@@ -204,7 +201,6 @@ body {
   width: 160px;
   padding: 8px 34px;
   align-self: center;
-
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -262,7 +258,6 @@ body {
 .advantages {
   display: flex;
   flex-wrap: wrap;
-
   text-align: center;
 }
 
@@ -279,7 +274,6 @@ body {
   margin: 0;
   margin-bottom: 25px;
   width: 660px;
-
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -291,7 +285,6 @@ body {
 .advantages-text {
   margin: 0;
   width: 660px;
-
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -325,7 +318,6 @@ body {
   width: 175px;
   margin: 0 auto;
   margin-bottom: 30px;
-
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -347,7 +339,6 @@ body {
   width: 175px;
   margin: 0 auto;
   margin-bottom: 30px;
-
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -387,7 +378,6 @@ body {
 .services {
   display: flex;
   flex-wrap: wrap;
-
   text-align: center;
 }
 
@@ -412,7 +402,6 @@ body {
 .services-title {
   margin: 0;
   margin-bottom: 30px;
-
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -427,7 +416,6 @@ body {
   height: 70px;
   margin: 0 auto;
   margin-bottom: 30px;
-
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -453,7 +441,6 @@ body {
   margin: 0;
   margin-bottom: 20px;
   width: 505px;
-
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -465,7 +452,6 @@ body {
 .services-text {
   margin: 0;
   width: 505px;
-
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -483,7 +469,6 @@ body {
   width: 592px;
   margin: 0;
   margin-bottom: 20px;
-
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -496,7 +481,6 @@ body {
   width: 592px;
   margin: 0;
   margin-bottom: 54px;
-
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -505,7 +489,6 @@ body {
 .hotels-search-button {
   max-width: 391px;
   padding: 8px 50px;
-
   font-family: inherit;
   font-size: 20px;
   font-weight: 700;
@@ -566,7 +549,6 @@ body {
   width: 475px;
   margin: 0;
   margin-bottom: 54px;
-
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -596,7 +578,6 @@ body {
 .email-input {
   width: 452px;
   padding: 14px 20px;
-
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -620,7 +601,6 @@ body {
 .subscription-button {
   padding: 8px 50px;
   margin-left: -5px;
-
   font-family: inherit;
   font-size: 20px;
   font-weight: 700;
@@ -656,7 +636,6 @@ body {
 .filter {
   padding: 35px 70px 70px 70px;
   margin-bottom: 50px;
-
   color: #ffffff;
   background-color: #82b3d3;
   background-image: url("../images/catalog/filter-background.jpg");
@@ -667,7 +646,6 @@ body {
 .filter-main-title {
   margin: 0;
   margin-bottom: 8px;
-
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
@@ -682,7 +660,6 @@ body {
   padding: 0;
   list-style-type: none;
   column-gap: 27px;
-
   font-size: 16px;
 }
 
@@ -845,7 +822,6 @@ body {
   margin: 0;
   margin-left: auto;
   width: 288px;
-
   border: none;
 }
 
@@ -860,7 +836,6 @@ body {
   position: absolute;
   top: 12px;
   left: 106px;
-
   line-height: 24px;
   color: rgba(117, 97, 87, 0.3);
 }
@@ -869,7 +844,6 @@ body {
   position: absolute;
   right: 20px;
   top: 12px;
-
   line-height: 24px;
   color: rgba(117, 97, 87, 0.3);
 }
@@ -881,7 +855,6 @@ body {
   padding-left: 20px;
   padding-bottom: 12px;
   padding-right: 45px;
-
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
@@ -976,7 +949,6 @@ body {
 .apply-button {
   padding: 8px 50px;
   margin-bottom: 32px;
-
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -1009,7 +981,6 @@ body {
 
 .reset-button {
   padding: 8px 50px;
-
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -1057,7 +1028,6 @@ body {
 
 .search-result-text {
   margin: 0;
-
   width: 450px;
   font-size: 30px;
   font-weight: 700;
@@ -1088,7 +1058,6 @@ body {
 
 .button-layout {
   display: block;
-
   font-weight: 700;
   color: #000000;
   border-radius: 4px;
@@ -1116,7 +1085,6 @@ body {
   height: 49px;
   padding: 14px 50px 14px 20px;
   margin-left: auto;
-
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -1255,7 +1223,6 @@ body {
 .card-button {
   padding: 8px 15px;
   margin: 0;
-
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -1358,7 +1325,6 @@ body {
 .pagination-link {
   display: block;
   min-width: 60px;
-  /* чтобы кнопка растянулась в ширину если значение будет большим */
   height: 60px;
   padding: 12px 10px;
 
@@ -1396,7 +1362,6 @@ body {
 .pagination-dots {
   display: block;
   min-width: 60px;
-  /* чтобы кнопка растянулась в ширину если значение будет большим */
   height: 60px;
   padding: 12px 10px;
   margin: 0;
@@ -1464,7 +1429,6 @@ body {
 .footer-phone {
   margin-left: 10px;
   margin-top: 5px;
-
   font-size: 40px;
   line-height: 40px;
   color: #000000;
@@ -1525,7 +1489,6 @@ body {
 
 .modal-container-close {
   display: none;
-  /* Для того, чтобы высветилось модальное окно, нужно удалить код выше */
 }
 
 .modal {
@@ -1580,11 +1543,11 @@ body {
 }
 
 .fieldset-container {
+  width: 577px;
   display: grid;
-  grid-template-columns: 120px max-content 1fr max-content;
+  grid-template-columns: 120px auto 1fr auto;
   grid-template-rows: 1fr;
   column-gap: 18px;
-
   padding: 0;
   margin: 0;
   margin-bottom: 48px;
@@ -1638,6 +1601,7 @@ body {
   align-self: center;
   width: 440px;
   margin-bottom: 4px;
+  padding-right: 60px;
   background-image: url("../images/icons/calendar-icon.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
@@ -1667,6 +1631,10 @@ body {
 .input-container {
   position: relative;
   align-self: center;
+}
+
+.kids-count-label {
+  grid-column: 3 / 4;
 }
 
 .kids-input {
