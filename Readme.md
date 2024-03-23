@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Ksenia T.](https://up.htmlacademy.ru/htmlcss/39/user/2470749).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
+* Сайт: [Мой проект Седона](https://kseniatry.github.io/2470749-sedona-39/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
