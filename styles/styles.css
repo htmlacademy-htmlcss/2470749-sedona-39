@@ -357,7 +357,7 @@ body {
 }
 
 .advantages-item-img-photo {
-  min-width: 800px;
+  max-width: 800px;
   object-fit: contain;
   flex-grow: 1;
 }
