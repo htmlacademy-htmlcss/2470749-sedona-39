@@ -302,7 +302,7 @@ body {
 
 .advantages-item-img {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   color: #ffffff;
   background-color: #82b3d3;
   flex-grow: 1;
@@ -355,8 +355,9 @@ body {
 }
 
 .advantages-item-img-photo {
-  max-width: 800px;
-  object-fit: contain;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
   flex-grow: 1;
 }
 
@@ -746,6 +747,7 @@ body {
 
 .filter-list-item {
   margin-bottom: 16px;
+  margin-left: 36px;
 }
 
 .filter-list-item:last-child {
@@ -754,7 +756,6 @@ body {
 
 .filter-list-item-label {
   position: relative;
-  margin-left: 36px;
 }
 
 .control-mark {
@@ -1163,7 +1164,6 @@ body {
 
 .hotel-card-title {
   margin: 0;
-
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
