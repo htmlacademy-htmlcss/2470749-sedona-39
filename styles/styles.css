@@ -97,7 +97,6 @@ body {
   flex-wrap: wrap;
   margin: 0;
   margin-right: 30px;
-  /* margin right на случай если будет переполнение и перенос на другую строку, чтобы списки не слиплись */
   padding: 0;
   list-style-type: none;
   width: 450px;
