@@ -257,6 +257,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  justify-content: center;
 }
 
 .advantages-container {
@@ -291,7 +292,6 @@ body {
 .advantages-item {
   width: 400px;
   padding: 112px 85px;
-  flex-grow: 1;
 }
 
 .advantages-text-container {
@@ -356,7 +356,6 @@ body {
 
 .advantages-item-img-photo {
   object-fit: cover;
-  width: 100%;
   height: auto;
   flex-grow: 1;
 }
@@ -859,12 +858,14 @@ body {
 
 .price-input::-webkit-outer-spin-button,
 .price-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
 .price-input[type="number"] {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   -moz-appearance: textfield;
 }
 
@@ -1089,7 +1090,8 @@ body {
   background-position: top 50% right 20px;
   border-radius: 4px;
   border: 2px solid #e5e5e5;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 .sorting:hover,
@@ -1127,6 +1129,9 @@ body {
 }
 
 .hotel-card-image-link {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: image;
   line-height: 0;
 }
@@ -1144,6 +1149,9 @@ body {
 }
 
 .hotel-card-title-link {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: title;
   color: #000000;
   text-decoration: none;
@@ -1170,11 +1178,15 @@ body {
 }
 
 .hotel-price-name {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
   grid-area: type;
   margin: 0;
 }
 
 .hotel-price-value {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
   grid-area: price;
   margin: 0;
   text-align: end;
@@ -1226,6 +1238,8 @@ body {
 }
 
 .detail-button {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
   display: block;
   grid-area: detail;
   color: #ffffff;
@@ -1246,6 +1260,8 @@ body {
 }
 
 .favorite-button {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
   grid-area: favorite;
   color: #ffffff;
   background-color: #82b3d3;
@@ -1265,6 +1281,8 @@ body {
 }
 
 .favorite-button-active {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
   grid-area: favorite;
   color: #ffffff;
   background-color: #7db54f;
@@ -1288,6 +1306,8 @@ body {
 }
 
 .rate-button {
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
   grid-area: rate;
   color: #333333;
   background-color: #f2f2f2;
@@ -1673,12 +1693,14 @@ body {
 
 .count-input::-webkit-outer-spin-button,
 .count-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
 .count-input[type="number"] {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   -moz-appearance: textfield;
 }
 
